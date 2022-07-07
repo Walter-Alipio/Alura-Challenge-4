@@ -2,10 +2,10 @@ import logo from '../../../assets/icons/Logo-completo-02.png';
 
 export default function Main(){
   return (
-    <main>
-      <section className='text-white flex flex-col items-center mt-4'>
+    <main className='h-[85%] overflow-hidden'>
+      <section className='text-white flex flex-col items-center mt-4 h-full'>
         <header>
-          <img src={logo} alt="Logo adopet" className='w-44 m-4'/>
+          <img src={logo} alt="Logo adopet" className='w-44 mt-4 mb-4'/>
         </header>
         <main className='text-center m-4'>
           <h1 className='font-semibold mb-4 text-2xl'>Boas-vinda!</h1>
@@ -25,7 +25,7 @@ export default function Main(){
             Quero me cadastrar
           </a>
         </nav>
-      <div className='bg-catAndDog bg-contain bg-no-repeat w-48 h-80 mr-auto ml-16'></div>
+      <div className='bg-catAndDog bg-contain bg-no-repeat w-48 h-56 mr-auto ml-16 mb-o mt-auto'></div>
       </section>
     </main>
   )

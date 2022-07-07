@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        mobile: "url(/src/assets/fundo/fundo-mobile.png)",
+        mobileRegister: "url(/src/assets/fundo/fundo-mobile-registration.svg)",
         catAndDog: "url(/src/assets/fundo/cat-dog.svg)",
+        paws: "url(/src/assets/icons/Patas.svg)",
       },
       fontFamily: {
         sans: "Poppins, sans-serif",
@@ -15,9 +16,9 @@ module.exports = {
           100: "#FCF0E3",
         },
         gray: {
-          100: "#F7F7F7",
-          500: "#BCBCBC",
-          900: "#737380",
+          light: "#F7F7F7",
+          medium: "#BCBCBC",
+          hard: "#737380",
         },
         coral: {
           hover: "#FF9D9E",
