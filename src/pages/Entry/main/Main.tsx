@@ -13,13 +13,13 @@ export default function Main(){
         </main>
         <nav className='flex flex-col'>
           <a href="#" 
-            className='font-semibold mb-4 text-base text-center bg-coral-normal rounded-md py-3'
+            className='font-semibold mb-4 text-base text-center bg-coral-normal hover:bg-coral-hover rounded-md py-3 shadow-md transition-colors'
             title='Logar'
           >
             Já tenho conta
           </a>
           <a href="#" 
-           className='font-semibold mb-4 text-base text-center bg-coral-normal rounded-md py-3 px-4'
+           className='font-semibold mb-4 text-base text-center bg-coral-normal hover:bg-coral-hover rounded-md py-3 px-4 shadow-md transition-colors'
            title='Cadastrar'
           >
             Quero me cadastrar
