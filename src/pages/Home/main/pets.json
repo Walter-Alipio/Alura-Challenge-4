@@ -1,0 +1,110 @@
+[
+  {
+    "photo": "/assets/Image-Pets/Imagem-Dunga.png",
+    "name": "Dunga",
+    "age": "2 anos",
+    "size": "Porte pequeno",
+    "character": "Calmo e educado",
+    "id": 1,
+    "address": {
+      "city": "Rio de Janeiro",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Felicia.png",
+    "name": "Felícia",
+    "age": "3 meses",
+    "size": "Porte pequeno",
+    "character": "Ativa e carinhosa",
+    "id": 2,
+    "address": {
+      "city": "Nova Iguaçu",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Sirius.png",
+    "name": "Sirius",
+    "age": "6 meses",
+    "size": "Porte grande",
+    "character": "Ativo e educado",
+    "id": 3,
+    "address": {
+      "city": "Duque de caxias",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Fiona.png",
+    "name": "Fiona",
+    "age": "3 anos",
+    "size": "Porte pequeno",
+    "character": "Calma e carinhosa",
+    "id": 4,
+    "address": {
+      "city": "São Gonçalo",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Sid.png",
+    "name": "Sid",
+    "age": "8 meses",
+    "size": "Porte médio/grande",
+    "character": "Brincalhão e amável",
+    "id": 5,
+    "address": {
+      "city": "Rio de Janeiro",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Yoda.png",
+    "name": "Yoda",
+    "age": "1 ano",
+    "size": "Porte médio",
+    "character": "Ativo e carinhoso",
+    "id": 6,
+    "address": {
+      "city": "Nova Iguaçu",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Lua.png",
+    "name": "Lua",
+    "age": "6 meses",
+    "size": "Porte médio",
+    "character": "Ativa e carinhosa",
+    "id": 7,
+    "address": {
+      "city": "Duque de Caxias",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Amora.png",
+    "name": "Amora",
+    "age": "45 dias",
+    "size": "Porte grande",
+    "character": "Calma e carinhosa",
+    "id": 8,
+    "address": {
+      "city": "São Gonçalo",
+      "uf": "RJ"
+    }
+  },
+  {
+    "photo": "/assets/Image-Pets/Imagem-Zelda.png",
+    "name": "Zelda",
+    "age": "5 meses",
+    "size": "Porte médio",
+    "character": "Ativa e amável",
+    "id": 9,
+    "address": {
+      "city": "Rio de Janeiro",
+      "uf": "RJ"
+    }
+  }
+]
