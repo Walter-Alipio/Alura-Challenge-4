@@ -20,14 +20,15 @@ export default function Register(){
         <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
       </div>
       <form action="#" className="flex flex-col items-center text-gray-hard gap-2 mb-4">
+
         <label htmlFor="email" className="mt-2">E-mail</label>
         <input type="text" id="email" maxLength={20}
-          className="h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light pl-2" 
+          className="h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light pl-2 placeholder:text-gray-medium text-gray-hard" 
           placeholder="Escolha seu melhor email"/>
 
         <label htmlFor="name" className="mt-2">Nome</label>
         <input type="text" id="name" maxLength={20}
-          className="h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light pl-2" 
+          className="h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light pl-2 placeholder:text-gray-medium text-gray-hard" 
           placeholder="Digite seu nome completo"/>
 
         <label htmlFor="password" className="mt-2">Senha</label>
@@ -56,7 +57,7 @@ export default function Register(){
         className=" h-10 rounded-md shadow-md hover:border bg-gray-light overflow-hidden relative flex items-center focus-within:outline focus-within:outline-orange-600 focus-within:outline-2">
 
           <input type={confirmePassword} id="pConfirm" maxLength={20}
-            className="placeholder:text-center h-full bg-inherit pl-2" 
+            className="placeholder:text-center h-full bg-inherit pl-2 placeholder:text-gray-medium text-gray-hard" 
             placeholder="Repita a senha criada acima"/>
 
           <button 

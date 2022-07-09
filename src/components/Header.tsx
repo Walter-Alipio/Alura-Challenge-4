@@ -1,11 +1,13 @@
-import casa from '../assets/icons/Casa.svg'
+import casa from '../assets/icons/Casa.svg';
 import mensagens from "../assets/icons/Mensagens.svg";
 import logo from '../assets/icons/Logo-completo-02.png';
-import user from '../assets/icons/Usuario.svg'
+import user from '../assets/icons/Usuario.svg';
+
+
 
 export default function Header(){
 
-  const logged = false;
+  const logged = true;
 
   return (
     <header className="p-7 h-24 mb-10 flex items-center justify-between">
@@ -22,9 +24,9 @@ export default function Header(){
           />
         </a>
       </nav>
-      {logged ?  <div>
+      {logged ?  <button>
         <img src={user} alt="Foto do perfil" className='w-10 h-10'/>
-      </div>
+      </button>
       : ""}
      
     </header>

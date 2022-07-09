@@ -15,7 +15,7 @@ export default function Login(){
       <form action="#" className="flex flex-col items-center text-gray-hard gap-2">
         <label htmlFor="email" className="mt-2">E-mail</label>
         <input type="text" id="email" 
-          className="pl-2 h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light" 
+          className="pl-2 h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light placeholder:text-gray-medium text-gray-hard" 
           placeholder="Escolha seu melhor email"/>
 
 
@@ -24,7 +24,7 @@ export default function Login(){
           className=" h-10 rounded-md shadow-md hover:border bg-gray-light overflow-hidden relative flex items-center focus-within:outline focus-within:outline-orange-600 focus-within:outline-2">
         
           <input type={password} id="password" maxLength={20}
-            className="pl-2 h-full bg-inherit placeholder:text-center" 
+            className="pl-2 h-full bg-inherit placeholder:text-center placeholder:text-gray-medium text-gray-hard" 
             placeholder="Senha"/>
             
             <button 

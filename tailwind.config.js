@@ -4,7 +4,6 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        mobileRegister: "url(/src/assets/fundo/fundo-mobile-registration.svg)",
         catAndDog: "url(/src/assets/fundo/cat-dog.svg)",
         paws: "url(/src/assets/icons/Patas.svg)",
       },
