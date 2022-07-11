@@ -7,10 +7,10 @@ import user from '../assets/icons/Usuario.svg';
 
 export default function Header(){
 
-  const logged = true;
+  const logged = false;
 
   return (
-    <header className="p-7 h-24 mb-10 flex items-center justify-between">
+    <header className="p-7 flex items-start justify-between bg-inherit bg-forma1 bg-no-repeat overflow-visible absolute top-0 h-72 w-full">
       <nav className="flex items-center gap-10 p-7">
         <img src={logo} alt="Adopet logo" className="hidden" />
         <a href="#" title="Página inicial" className="group">
