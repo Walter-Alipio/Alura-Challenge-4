@@ -1,23 +1,18 @@
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
-import Main from "./main/Main";
-import background from '../../assets/fundo/Forma1.svg'
-import Message from "./message/Message";
-import Profile from "./profile/Profile";
+import Pets from './Pets'
 
 export default function Home(){
 
 
   return (
-    <div className="flex flex-col h-screen">
-      <div className="relative overflow-visible h-24 mb-10 w-full">
-        <img src={background} alt="" className="relative"/>
-        <div className="absolute top-0 w-full">
-        <Header />
-      </div>
-    </div>
-      <Profile />
-      <Footer />
-    </div>
+    <main className="h-full overflow-hidden">
+      
+      <section className="h-[calc(100vh-6rem)] pt-24 overflow-scroll">
+        <header className="flex flex-col pt-16 items-center">
+         <p className="text-blue-logo text-center mx-16 my-3">Olá! Veja os amigos disponíveis para adoção!</p>
+        </header>
+        <Pets />
+      </section>
+
+    </main>
   )
 }

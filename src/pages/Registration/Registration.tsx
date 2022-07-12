@@ -16,7 +16,7 @@ export default function Registration(){
       <div className="bg-paws bg-no-repeat bg-cover w-36 h-52 absolute right-0 top-0"></div>
 
       <section className="bg-forma2 bg-right bg-no-repeat flex flex-col h-[calc(100vh-6rem)] pt-24 items-center">
-       <header className='m-auto'>
+       <header className='mt-16'>
           <img src={logo} alt="Logo adopet" className='w-44 mt-4 mb-4'/>
         </header>
       <div className="text-center text-sm text-blue-logo w-80 mb-2">

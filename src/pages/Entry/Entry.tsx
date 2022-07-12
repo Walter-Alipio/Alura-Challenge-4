@@ -7,10 +7,10 @@ export default function Entry(){
     <main className='h-full overflow-hidden'>
 
       <section 
-        className='text-white bg-forma2 bg-right bg-no-repeat bg-blue-logo flex flex-col h-[calc(100vh-6rem)] pt-24 items-center'
+        className='flex flex-col h-[calc(100vh-6rem)] pt-24 items-center'
       >
 
-        <header className='m-auto'>
+        <header className='mt-16'>
           <img src={logo} alt="Logo adopet" className='w-44 mt-4 mb-4'/>
         </header>
         <main className='text-center m-4 flex flex-col items-center'>
@@ -18,7 +18,7 @@ export default function Entry(){
           <p className='mt-4 w-60'>Que tal mudar sua vida adotando seu novo melhor amigo? Vem com a gente!</p>
         </main>
         <nav className='flex flex-col w-80 '>
-          <Link to="#" 
+          <Link to={'/login'} 
             className='font-semibold mb-4 text-base text-center bg-coral-normal hover:bg-coral-hover rounded-md py-3 shadow-md transition-colors'
             title='Logar'
           >

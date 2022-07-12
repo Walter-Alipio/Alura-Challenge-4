@@ -6,6 +6,8 @@ module.exports = {
       backgroundImage: {
         catAndDog: "url(/src/assets/fundo/cat-dog.svg)",
         paws: "url(/src/assets/icons/Patas.svg)",
+        forma1: 'url("/src/assets/fundo/Forma1.svg")',
+        forma2: 'url("/src/assets/fundo/Forma2.svg")',
       },
       fontFamily: {
         sans: "Poppins, sans-serif",

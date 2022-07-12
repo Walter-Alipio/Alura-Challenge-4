@@ -11,14 +11,14 @@ export default function Profile(){
       <form action="#" className="flex flex-col rounded-lg bg-gray-light m-4 p-4 pt-6 gap-4">
         <h1 className="self-center text-xl font-semibold text-gray-hard">Pefil</h1>
 
-        <label htmlFor="photo"
-          className="text-blue-logo font-semibold text-base mt-2"
+        <span className="text-blue-logo font-semibold text-base mt-2"
         >
           Foto
-        </label>
+        </span>
         <div className="flex flex-col items-center justify-center gap-3">
-          <img src={user} alt="Foto do perfil" className='w-20 h-20'/>
-          <input type="file" name="" id="photo" className="hidden"/>
+          <button>
+            <img src={user} alt="Foto do perfil" className='w-20 h-20'/>
+          </button>
           <span className="text-xs text-coral-normal">Clique na foto para editar</span>
         </div>
 

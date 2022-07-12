@@ -1,4 +1,4 @@
-import CardPet from '../../../components/CardPet';
+import CardPet from '../../components/CardPet';
 import pets from './pets.json'
 
 export default function Pets(){
