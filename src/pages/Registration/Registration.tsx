@@ -15,15 +15,15 @@ export default function Registration(){
     
       <div className="bg-paws bg-no-repeat bg-cover w-36 h-52 absolute right-0 top-0"></div>
 
-      <section className="bg-forma2 bg-right bg-no-repeat flex flex-col h-[calc(100vh-6rem)] pt-24 items-center">
-       <header className='mt-16'>
-          <img src={logo} alt="Logo adopet" className='w-44 mt-4 mb-4'/>
+      <section className="bg-forma2 bg-right bg-no-repeat flex flex-col h-full pt-24 md:pt-40 lg:pt-24 items-center  md:text-base md:gap-3">
+       <header className='mt-16 nb:mt-8'>
+          <img src={logo} alt="Logo adopet" className='w-44 md:w-64 mt-4 mb-4'/>
         </header>
-      <div className="text-center text-sm text-blue-logo w-80 mb-2">
+      <div className="text-center text-sm text-blue-logo w-80 mb-2 md:w-[32.8125rem]">
         <p>Ainda não tem cadastro?</p>
         <p>Então, antes de buscar seu melhor amigo, precisamos de alguns dados:</p>
       </div>
-      <form action="#" className="flex flex-col items-center text-gray-hard gap-2 mb-4">
+      <form action="#" className="flex flex-col items-center text-gray-hard gap-2 md:gap-4 mb-4 md:w-[21.5rem]">
 
         <label htmlFor="email" className="mt-2">E-mail</label>
         <input type="text" id="email" maxLength={20}

@@ -3,13 +3,17 @@ import Button from "../../components/Button";
 export default function Profile(){
   return(
     <main className="h-full overflow-hidden">
-      <section className="h-[calc(100vh-6rem)] pt-24 overflow-scroll">
+
+      <section className="h-full pt-24 w-screen md:pt-56 lg:pt-24 flex flex-col items-center lg:h-full md:bg-forma2 bg-no-repeat bg-right bg-[length:134.45px_664px]">
+
         <header className="flex flex-col pt-16 items-center">
             <p className="text-blue-logo text-center mx-16 my-3 ">
               Esse é o perfil que aparece para responsáveis ou ONGs que recebem sua mensagem.
             </p>
         </header>
-         <form action="#" className="flex flex-col rounded-lg bg-gray-light m-4 p-4 pt-6 gap-4">
+
+      <form action="#" className="flex flex-col rounded-lg bg-gray-light m-4 p-4 pt-6 gap-4 md:mb-16 w-[90%] max-w-[33rem]">
+        
         <h1 className="self-center text-xl font-semibold text-gray-hard">Pefil</h1>
 
         <span className="text-blue-logo font-semibold text-base mt-2"
@@ -17,9 +21,14 @@ export default function Profile(){
           Foto
         </span>
         <div className="flex flex-col items-center justify-center gap-3">
-          <button>
-            <img src='' alt="Foto do perfil" className='w-20 h-20'/>
-          </button>
+          {/* <button>
+            <img src='' alt="Foto do perfil" className='w-24 h-24 rounded-full bg-slate-700'/>
+          </button> */}
+          <label htmlFor="file" 
+            className="w-24 h-24 rounded-full bg-user bg-no-repeat bg-cover hover:cursor-pointer hover:shadow-coral-hover hover:shadow-md"
+          >
+            <input type="file" name="file" id="file"  className="hidden"/>
+          </label>
           <span className="text-xs text-coral-normal">Clique na foto para editar</span>
         </div>
 

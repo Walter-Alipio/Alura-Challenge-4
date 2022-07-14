@@ -13,6 +13,7 @@ export default function AppRoutes(){
   return(
     <BrowserRouter>
       <Header />
+
       <Routes>
         <Route path="/">
           <Route index  element={<Entry />} />
@@ -23,6 +24,7 @@ export default function AppRoutes(){
           <Route path="perfil" element={<Profile />} />
         </Route>
       </Routes>
+      
       <Footer />
     </BrowserRouter>
 

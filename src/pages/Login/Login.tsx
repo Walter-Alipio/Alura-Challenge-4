@@ -16,17 +16,19 @@ export default function Login(){
 
      <div className="bg-paws bg-no-repeat bg-cover w-36 h-52 absolute right-0 top-0"></div>
 
-      <section className="bg-forma2 bg-right bg-no-repeat flex flex-col h-[calc(100vh-6rem)] pt-24 items-center">
+      <section 
+        className="bg-forma2 bg-right bg-no-repeat flex flex-col h-[calc(100vh-5rem)] pt-24 md:pt-40 lg:pt-24 items-center"
+      >
 
-       <header className='mt-16'>
-          <img src={logo} alt="Logo adopet" className='w-44 mt-4 mb-4'/>
+       <header className='mt-16 nb:mt-8'>
+          <img src={logo} alt="Logo adopet" className='w-44 md:w-64 mt-4 mb-4'/>
         </header>
 
-       <div className="text-center text-sm text-blue-logo w-80 my-10">
+       <div className="text-center text-sm text-blue-logo w-80 my-6 md:text-base">
         <p>Já tem conta? Faça seu login:</p>
       </div>
 
-      <form action="#" className="flex flex-col items-center text-gray-hard gap-2 mb-4">
+      <form action="#" className="flex flex-col items-center text-gray-hard gap-2 mb-4 md:w-[21.5rem]">
               <label htmlFor="email" className="mt-2">E-mail</label>
         <input type="text" id="email" 
           className="pl-2 h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light placeholder:text-gray-medium text-gray-hard" 

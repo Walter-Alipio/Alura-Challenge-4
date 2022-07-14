@@ -17,7 +17,7 @@ export default function CardPet(
   {name,age,size,character,address,photo}: Props
   ){
   return (
-    <div className="flex gap-2 bg-gray-light h-48 rounded-md">
+    <div className="flex gap-2 bg-gray-light h-48 rounded-md md:max-w-[21.5rem] border">
       <div className="w-[45%] h-full p-3 flex flex-col justify-center">
         <img src={photo} alt={name} />
       </div>
