@@ -5,11 +5,13 @@ import { seePassword } from "../../utils/seePassword";
 import logo from '../../assets/icons/Logo-completo.png'
 
 export default function Registration(){
+
   const [password,setPassword] = useState<'text' | 'password'>('password');
   const [activeEyes,setActiveEyes] = useState(false);
 
   const [confirmePassword,setConfirmePassword] = useState<'text' | 'password'>('password');
   const [confirmeActiveEyes,setConfirmeActiveEyes] = useState(false);
+
   return (
     <main className="h-full overflow-hidden">
     
@@ -43,17 +45,17 @@ export default function Registration(){
             className="pl-2 h-full bg-inherit placeholder:text-center" 
             placeholder="Crie uma senha"/>
             
-            <button 
-              className="absolute right-2"
-              onClick={event=>seePassword(
-                event,
-                setPassword,
-                setActiveEyes,
-                activeEyes
-                )}
-            >
-              { activeEyes ? <AiFillEye /> : <AiFillEyeInvisible />}
-            </button>
+          <button 
+            className="absolute right-2"
+            onClick={event=>seePassword(
+            event,
+            setPassword,
+            setActiveEyes,
+            activeEyes
+            )}
+          >
+            { activeEyes ? <AiFillEye /> : <AiFillEyeInvisible />}
+          </button>
         </div>
 
         <label htmlFor="pConfirm" className="mt-2">Confirma sua senha</label>
