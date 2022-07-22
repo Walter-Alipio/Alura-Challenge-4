@@ -65,7 +65,6 @@ export default function Login(){
             {...register('password',
               {
                 required: 'Campo senha deve ser preenchido.',
-
               }
               )}
             className="pl-2 h-full bg-inherit placeholder:text-center placeholder:text-gray-medium text-gray-hard" 
