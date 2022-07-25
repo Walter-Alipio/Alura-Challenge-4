@@ -11,7 +11,7 @@ export default function Header(){
   const logged = false;
 
   return (
-    <header className="p-7 flex items-start justify-between bg-inherit bg-forma1 md:bg-[length:35rem] nb:bg-[length:25.5rem] bg-no-repeat overflow-visible absolute top-0 h-72 md:h-[27rem] nb:h-[19rem] w-full">
+    <header className="p-7 flex items-start justify-between bg-inherit bg-forma1 md:bg-[length:27.5rem] bg-no-repeat overflow-visible absolute top-0 h-72 md:h-80 w-full">
 
       <nav className="flex items-center gap-10 p-7">
         <img src={logo} alt="Adopet logo" className="hidden w-32 md:block" />
