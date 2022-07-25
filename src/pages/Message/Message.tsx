@@ -1,8 +1,6 @@
 import Button from "../../components/Button";
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { ErrorMessage } from '@hookform/error-message';
-import { ReactInputMask } from 'react-input-mask';
-
 
 interface IFormInput{
   name: string,
@@ -22,8 +20,8 @@ export default function Message(){
   }
 
   return (
-    <main className="h-full overflow-scroll">
-      <section  className="h-full pt-24 w-screen md:pt-56 lg:pt-24 flex flex-col items-center lg:h-full md:bg-forma2 bg-no-repeat bg-right bg-[length:134.45px_664px]">
+    <main className="h-full overflow-hidden">
+      <section  className="h-full overflow-hidden pt-24 md:pt-56 lg:pt-24 flex flex-col items-center md:bg-forma2 bg-no-repeat bg-right bg-[length:134.45px_664px]">
         
         <header className="flex flex-col pt-16 items-center mx-auto md:max-w-[40.8125rem] md:mb-10">
           <p className="text-blue-logo text-center mx-16 my-3 md:text-lg">Envie uma mensagem para a pessoa ou instituição que está cuidado do animal:</p>
@@ -67,7 +65,7 @@ export default function Message(){
               },
               pattern:{
                 value: /^[0][0-9]{2}\s[9]?\d{4}[-]?\d{4}/g,
-                message: 'Número de telefone incorreto!',
+                message: 'Número de telefone incorreto! Ex: 011 99999 9999',
               }
 
             })}

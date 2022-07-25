@@ -26,7 +26,7 @@ export default function Login(){
      <div className="bg-paws bg-no-repeat bg-cover w-36 h-52 absolute right-0 top-0"></div>
 
       <section 
-        className="bg-forma2 bg-right bg-no-repeat flex flex-col h-[calc(100vh-5rem)] pt-24 md:pt-40 lg:pt-24 items-center"
+        className="bg-forma2 bg-right bg-no-repeat flex flex-col min-h-[91vh] pt-24 md:pt-40 lg:pt-24 items-center"
       >
 
        <header className='mt-16 nb:mt-8'>

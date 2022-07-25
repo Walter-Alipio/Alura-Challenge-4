@@ -39,7 +39,8 @@ export default function Registration(){
     
       <div className="bg-paws bg-no-repeat bg-cover w-36 h-52 absolute right-0 top-0"></div>
 
-      <section className="bg-forma2 bg-right bg-no-repeat flex flex-col h-screen overflow-scroll pt-24 md:pt-40 lg:pt-24 items-center  md:text-base md:gap-3">
+      <section 
+        className="bg-forma2 bg-right bg-no-repeat flex flex-col h-full overflow-hidden pt-24 md:pt-40 lg:pt-24 items-center  md:text-base md:gap-3 mb-4 ">
        <header className='mt-16 nb:mt-8'>
           <img src={logo} alt="Logo adopet" className='w-44 md:w-64 mt-4 mb-4'/>
         </header>
@@ -62,7 +63,7 @@ export default function Registration(){
               maxLength:20,
               pattern: {
                 value: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g,
-                message: 'Formato de email inválido.',
+                message: 'Digite um e-mail valido.',
                 }
             })}
           />

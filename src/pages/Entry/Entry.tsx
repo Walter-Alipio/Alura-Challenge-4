@@ -7,7 +7,7 @@ export default function Entry(){
     <main className='h-full overflow-hidden'>
 
       <section 
-        className='bg-forma2 bg-right bg-no-repeat bg-blue-logo flex flex-col h-[calc(100vh-5rem)] pt-24 md:pt-40 lg:pt-24 items-center text-white'
+        className='bg-forma2 bg-right bg-no-repeat bg-blue-logo flex flex-col h-full pt-24 md:pt-40 lg:pt-24 items-center text-white scrollbar-hide'
       >
 
         <header className='mt-16 nb:mt-8'>
@@ -34,7 +34,7 @@ Vem com a gente!</p>
             Quero me cadastrar
           </Link>
         </nav>
-       <div className='bg-catAndDog bg-contain md:bg-cover nb:bg-contain lg:bg-cover bg-no-repeat w-48 md:w-80 h-56 md:h-[26.375rem] nb:h-80 lg:h-[26.375rem] mr-auto ml-16 md:ml-auto -mb-6 mt-auto'></div>
+       <div className='bg-catAndDog bg-contain md:bg-cover nb:bg-contain lg:bg-cover bg-no-repeat w-48 md:w-80 h-56 md:h-[26.375rem] nb:h-[19.8rem] lg:h-[26.375rem] mr-auto ml-16 md:ml-auto -mb-6 mt-auto'></div>
 
       </section>
     </main>
