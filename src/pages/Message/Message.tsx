@@ -8,16 +8,17 @@ interface IFormInput{
   petName: string,
   message: string,
 }
+ export function maskPhone(event: string ){
+
+    return event.replace(/\D/g,'').replace(/^(\d{3})(\d{4,5})(\d{4})/g,'$1 $2-$3');
+  }
+
 
 export default function Message(){
   const { register, setError, handleSubmit, formState: { errors } } = useForm<IFormInput>();
 
   const onSubmit: SubmitHandler<IFormInput> = ( data ) => console.log(data);
 
-  function maskPhone(event: string ){
-
-    return event.replace(/\D/g,'').replace(/^(\d{3})(\d{4,5})(\d{4})/g,'$1 $2-$3');
-  }
 
   return (
     <main className="h-full overflow-hidden">
@@ -29,6 +30,7 @@ export default function Message(){
 
         <form 
           onSubmit={handleSubmit(onSubmit)}
+         
           className="flex flex-col rounded-lg bg-gray-light mx-4 p-4 gap-4 mb-4 md:mb-16 w-[90%] max-w-[33rem]"
         >
 
@@ -37,12 +39,13 @@ export default function Message(){
           >
             Nome
           </label>
-          <input type="text" id="name" placeholder="Insira seu nome completo"
+          <input type="text" id="name" placeholder="Insira seu nome completo" maxLength={30}
+            autoComplete={'name'}
             {...register('name', {
               required: 'Preencha seu nome.',
-              maxLength: 20,
+              maxLength: 30,
             })}
-            className="h-10 rounded-md shadow-md  hover:border pl-2 placeholder:text-gray-medium  text-gray-hard placeholder:text-sm"
+            className="h-10 rounded-md shadow-md  hover:border pl-2 placeholder:text-gray-medium  text-gray-hard placeholder:text-sm placeholder:text-center"
           />
           <p className="text-red-600"><ErrorMessage errors={errors} name='name' /></p>
 
@@ -69,7 +72,7 @@ export default function Message(){
               }
 
             })}
-            className="h-10 rounded-md shadow-md  hover:border pl-2 placeholder:text-gray-medium text-gray-hard placeholder:text-sm"
+            className="h-10 rounded-md shadow-md  hover:border pl-2 placeholder:text-gray-medium text-gray-hard placeholder:text-sm placeholder:text-center"
           />
            <p className="text-red-600"><ErrorMessage errors={errors} name='phone' /></p>
 
@@ -83,7 +86,7 @@ export default function Message(){
               required: 'Preencha o nome do pet.',
               maxLength: 20,
             })}
-            className="h-10 rounded-md shadow-md  hover:border  pl-2 placeholder:text-gray-medium text-gray-hard placeholder:text-sm" 
+            className="h-10 rounded-md shadow-md  hover:border  pl-2 placeholder:text-gray-medium text-gray-hard placeholder:text-sm placeholder:text-center" 
           />
           <p className="text-red-600"><ErrorMessage errors={errors} name='petName' /></p>
 
@@ -93,7 +96,7 @@ export default function Message(){
             Mensagem
           </label>
           <textarea id="message" cols={30} rows={10} placeholder="Escreva sua mensagem." maxLength={250}
-            className="h-40 rounded-md shadow-md hover:border pl-2 pt-2 resize-none placeholder:text-gray-medium text-gray-hard placeholder:text-sm"
+            className="h-40 rounded-md shadow-md hover:border pl-2 pt-2 resize-none placeholder:text-gray-medium text-gray-hard placeholder:text-sm placeholder:text-center"
             {...register('message',{
               required: 'Deixe uma mensagem para o responsável',
               maxLength: 250
