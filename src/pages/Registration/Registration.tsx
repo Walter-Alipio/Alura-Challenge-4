@@ -73,10 +73,11 @@ export default function Registration(){
         <input type="text" id="name" 
           className="h-10 rounded-md shadow-md placeholder:text-center hover:border bg-gray-light pl-2 placeholder:text-gray-medium text-gray-hard" 
           placeholder="Digite seu nome completo"
+          maxLength={30}
           {...register('name',
             {
               required: 'O nome deve ser preenchido.',
-              maxLength: 20
+              maxLength: 30
             }
           )}
           />
